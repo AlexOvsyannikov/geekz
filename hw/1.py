@@ -19,7 +19,27 @@ def third_task(num):
 def fourth_task(num=9):
     res = []
     for i in range(1, 10):
-        print(f'{i} * {num} = {i*num}')
+        print(f'{i} * {num} = {i * num}')
         res.append(i * num)
     return res
 
+
+# basic function for fifth_task
+def f(x):
+    y = (0.1 * (x ** 3)) - (2 / x)
+    return y
+
+
+def fifth_task():
+    suitable = []
+    for x in range(-20, 21):
+        try:
+            y = f(x)
+            if abs(y) < 10:
+                suitable.append(x)
+        except Exception as e:
+            print(e)
+            print(x)
+            print('Function might not exist in this point')
+
+    return suitable
