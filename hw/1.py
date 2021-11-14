@@ -15,3 +15,11 @@ def third_task(num):
     previous_power = math.floor(math.log2(num))
     return 2 ** previous_power
 
+
+def fourth_task(num=9):
+    res = []
+    for i in range(1, 10):
+        print(f'{i} * {num} = {i*num}')
+        res.append(i * num)
+    return res
+
