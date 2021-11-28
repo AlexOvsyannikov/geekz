@@ -42,4 +42,13 @@ def third():
           f'Сумма цифр третьего числа: {sums[2]}\nМаксимальная сумма цифр: {max(sums)}')
 
 
+def fourth():
+    numb = 6
+    for line in range(numb-1):
+        str_nums = ''.join([str(i+1) for i in range(line+1)])
+        if line != 0:
+            print(str_nums[0:-1] + str_nums[-1] + str_nums[-2:0:-1] + str_nums[0])
+        else:
+            print(1)
+
 
