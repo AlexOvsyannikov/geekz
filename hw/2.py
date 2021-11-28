@@ -25,3 +25,21 @@ def second():
         print('Все ок')
 
 
+def third():
+    number_1 = '213134'
+    number_2 = '333322'
+    number_3 = '312356'
+
+    all_nums = [number_1, number_2, number_3]
+    sums = []
+    for num in all_nums:
+        sum_for_one = 0
+        for digit in num:
+            sum_for_one += int(digit)
+        sums.append(sum_for_one)
+
+    print(f'Сумма цифр первого числа: {sums[0]}\nСумма цифр второго числа: {sums[1]}\n'
+          f'Сумма цифр третьего числа: {sums[2]}\nМаксимальная сумма цифр: {max(sums)}')
+
+
+
