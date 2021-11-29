@@ -52,3 +52,8 @@ def fourth():
             print(1)
 
 
+def fifth():
+    n = 6
+    for i in range(1, n*2, 2):
+        print(' '*(n - (i // 2 + 1)) + '*' * i)
+
